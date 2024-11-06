@@ -153,7 +153,7 @@
 
         /* Showcase */
         #showcase {
-            height: 50vh;
+            height: 30vh;
             background: url("img/showcase.jpg") no-repeat center center/cover;
             display: flex;
             justify-content: center;
@@ -172,6 +172,29 @@
         #showcase .showcase-container p {
             font-size: 1.5em;
             padding: 0 20px;
+        }
+
+        /* Seccion Info */
+        #info {
+            display: flex;
+            min-height: 30vh;
+        }
+
+        #info .info-img {
+            background: url("./img/photo-1.jpg") no-repeat center center/cover;
+            /* flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto; */
+            flex: 1 1 auto;
+        }
+
+        #info .info-content {
+            background-color: #333;
+            color: #fff;
+            flex: 1 0 0%;
+            /* flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 0%; */
         }
     </style>
 </head>
@@ -198,7 +221,15 @@
             </div>
         </div>
     </header>
-    <section id="info"></section>
+    <section id="info">
+        <div class="info-img"></div>
+        <div class="info-content">
+            <h2>Confort Nuestro Lema</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo molestiae recusandae aperiam delectus
+                dicta, non</p>
+            <a class="btn bg-light" href="#">Visita el SPA</a>
+        </div>
+    </section>
     <section id="features"></section>
     <footer id="main-footer"></footer>
 </body>
