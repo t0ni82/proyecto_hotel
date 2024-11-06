@@ -158,7 +158,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
+            color: #fff;
         }
 
         #showcase .showcase-container {
@@ -195,6 +195,33 @@
             /* flex-grow: 1;
             flex-shrink: 0;
             flex-basis: 0%; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Section Features */
+        #features {
+            display: flex;
+        }
+
+        #features .box {
+            padding: 30px;
+            text-align: center;
+        }
+
+        #features .box i {
+            font-size: 5rem;
+            /* Los iconos se tratan como fuentes de texto */
+            margin-bottom: 1rem;
+        }
+
+        /* Main-Footer */
+        #main-footer {
+            text-align: center;
+            padding: 20px;
         }
     </style>
 </head>
@@ -213,7 +240,7 @@
         </nav>
         <div id="showcase">
             <div class="container showcase-container">
-                <h2>Disfrute su estancia</h2>
+                <h2><strong class="text-primary">Disfrute</strong> su estancia</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet atque explicabo repellendus
                     obcaecati deserunt aperiam tempora sit dolores. Fuga, sit quibusdam. Dolorem voluptatibus
                     inventore quas perspiciatis itaque laborum omnis officiis?</p>
@@ -224,14 +251,38 @@
     <section id="info">
         <div class="info-img"></div>
         <div class="info-content">
-            <h2>Confort Nuestro Lema</h2>
+            <h2><strong class="text-primary">Confort</strong> Nuestro Lema</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo molestiae recusandae aperiam delectus
                 dicta, non</p>
             <a class="btn bg-light" href="#">Visita el SPA</a>
         </div>
     </section>
-    <section id="features"></section>
-    <footer id="main-footer"></footer>
+    <section id="features">
+        <div class="box bg-light">
+            <i class="fa-solid fa-hotel"></i>
+            <h3>Buena localización</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel obcaecati mollitia voluptates ex ipsam? Qui
+                non maiores maxime accusamus odio commodi dicta quia neque, labore earum deserunt atque consectetur
+                natus.</p>
+        </div>
+        <div class="box bg-primary">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Comida gratis</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel obcaecati mollitia voluptates ex ipsam? Qui
+                non maiores maxime accusamus odio commodi dicta quia neque, labore earum deserunt atque consectetur
+                natus.</p>
+        </div>
+        <div class="box bg-light">
+            <i class="fa-solid fa-dumbbell"></i>
+            <h3>Gimnasio & spa</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel obcaecati mollitia voluptates ex ipsam? Qui
+                non maiores maxime accusamus odio commodi dicta quia neque, labore earum deserunt atque consectetur
+                natus.</p>
+        </div>
+    </section>
+    <footer id="main-footer" class="bg-dark">
+        <p>TVN Hotels &copy; 2024, Todos los derechos reservados</p>
+    </footer>
 </body>
 
 </html>
