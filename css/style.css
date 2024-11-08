@@ -1,0 +1,285 @@
+/* Reset mínimo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px;
+}
+
+img {
+  width: 100%;
+}
+/* utilidades */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.text-primary {
+  color: #f7c08a;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #f7c08a;
+  color: #333;
+}
+
+/* colores para reutilizar */
+.bg-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background-color: #fff;
+  color: #333;
+}
+
+.bg-primary {
+  background-color: #f88844;
+  color: #333;
+}
+
+.bg-secondary {
+  background-color: #ffb88c;
+  color: #333;
+}
+
+/* paddings para reutilizar */
+.pd-1 {
+  padding: 30px 0;
+}
+
+.pd-2 {
+  padding: 20px;
+}
+
+.pd-3 {
+  padding: 30px;
+}
+
+/* Navbar */
+#top-menu {
+  background-color: #333;
+  color: #fff;
+}
+
+#top-menu a {
+  color: #fff;
+}
+
+#top-menu h1 {
+  margin-left: 10px;
+}
+
+#top-menu .top-menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#top-menu .top-menu-container ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+#top-menu .top-menu-container ul a {
+  display: inline-block;
+  padding: 20px;
+}
+
+#top-menu .top-menu-container ul a:hover {
+  background-color: #444;
+  color: #f88844;
+}
+
+#top-menu .top-menu-container ul a.active {
+  border-bottom: 4px solid #f88844;
+}
+
+/* Showcase */
+#showcase {
+  height: 30vh;
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+#showcase .showcase-container {
+  text-align: center;
+}
+
+#showcase .showcase-container h2 {
+  font-size: 2em;
+}
+
+#showcase .showcase-container p {
+  font-size: 1.5em;
+  padding: 0 20px;
+}
+
+/* Seccion Info */
+#info {
+  display: flex;
+  min-height: 30vh;
+}
+
+#info .info-img {
+  background: url("../img/photo-1.jpg") no-repeat center center/cover;
+  /* flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto; */
+  flex: 1 1 auto;
+}
+
+#info .info-content {
+  background-color: #333;
+  color: #fff;
+  flex: 1 0 0%;
+  /* flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 0%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Section Features */
+#features {
+  display: flex;
+}
+
+#features .box {
+  padding: 30px;
+  text-align: center;
+}
+
+#features .box i {
+  font-size: 5rem;
+  /* Los iconos se tratan como fuentes de texto */
+  margin-bottom: 1rem;
+}
+
+/* About Info */
+#about-info {
+  display: flex;
+  height: 50vh;
+}
+
+#about-info .about-info-left {
+  flex: 2;
+}
+
+#about-info .about-info-right {
+  flex: 1;
+}
+
+#about-info .about-info-right img {
+  border-radius: 50%;
+}
+
+/* Testimonial */
+#testimonial {
+  background: url("../img/test-bg.jpg") no-repeat center center/cover;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#testimonial h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+#testimonial .opinions {
+  display: flex;
+  gap: 40px;
+}
+
+#testimonial .opinions .opinions-box {
+  padding: 20px;
+  margin: 40px;
+  border-radius: 8px;
+  text-align: left;
+  opacity: 0.9;
+}
+
+#testimonial .opinions .opinions-box img {
+  width: 100px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+/* Main-Footer */
+#main-footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* estilo mobil */
+@media screen and (max-width: 768px) {
+  /* #top-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  } */
+
+  #showcase {
+    height: 100vh;
+  }
+
+  #info .info-img {
+    /* display: none */
+    flex: 0;
+  }
+
+  #features {
+    flex-direction: column;
+  }
+
+  #about-info .about-info-right {
+    flex: 0;
+  }
+
+  #testimonial .opinions {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
